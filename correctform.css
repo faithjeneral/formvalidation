@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: gray;
+   
+}
+
+#form{
+    background-color: rgb(197, 181, 181);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.input{
+    position: relative;
+}
+.input input, .input button{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px; 
+    border: none;
+    
+   
+}
+small{
+display: flex;
+justify-content: flex-end;
+color: red;
+display: none;
+}
+
+
+span{
+position: absolute;
+top: 11px;
+right: 10%;
+transform: translateY(-50);
+display: none;
+
+}
+
+
+/* This CSS code targets checkboxes within input fields */
+input[type="checkbox"] {
+    transform: scale(4); /* Increase the scale factor to make the checkbox larger */
+    /* You can also add other styling properties like margin, padding, etc. */
+    /* margin: 20px; */
+    
+  }
+
+.input.active, .input.active small{
+    display: flex;
+    justify-content:end;
+    white-space: nowrap;
+    font-size:17px;
+    margin-left: 120px;
+    margin-top: 15px;
+    align-items: center;
+   
+}
+
+.input.active, small{
+   display: none; 
+}
+
+
+.input input.error{
+    outline: 2px solid red;
+    color: red;
+}
+
+.input input.error:focus{
+ outline: 1px solid red;
+}
+
+
+/* from here */
+
+
+.input i{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    cursor: pointer;
+}
+
+.input i.active{
+    display: block;
+}

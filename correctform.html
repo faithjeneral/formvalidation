@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="correctform.css">
+    <script src="https://kit.fontawesome.com/e19ea85db1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form id="form">
+        <div class="input">
+        <label for="firstname"></label>
+        <input type="text" id="firstname" name="firstname" value="" placeholder="First name">
+        <span><img src="images/icon-error.svg" alt=""></span>
+        <small>first name cannot be empty</small>
+        </div>
+
+        <div class="input">
+        <label for="lastname"></label>
+        <input type="text" id="lastname" name="lastname" value="" placeholder="Last name">
+        <span><img src="images/icon-error.svg" alt=""></span>
+        <small>last name cannot be empty</small>
+        </div>
+        
+        <div class="input">
+        <label for="email"></label>
+        <input type="email" id="email" name="email" value="" placeholder="Email">
+        <span><img src="images/icon-error.svg" alt=""></span>
+        <small>email cannot be empty</small>
+        </div>
+
+        <div class="input">
+        <label for="password"></label>
+        <input type="password" id="password" name="password" value="" placeholder="password">
+
+        <span2>
+        <i class=" active fa-solid fa-eye"></i>
+        <i class="fa-solid fa-eye-slash"></i>
+        </span2>
+
+        <span><img src="images/icon-error.svg" alt=""></span>
+        <small>password cannot be empty</small>
+        </div>
+
+        <div class="input">
+       <button class="btn" type="submit">Submit</button>
+        </div>
+
+        <div class="input active"  >
+        <input type="checkbox" id="check" name="check" value="">
+        <small>please subscibe to our channel</small>
+        </div>
+    </form>
+
+<script src="correctform.js"></script>
+</body>
+</html>
